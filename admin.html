@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obsidian · Studio OS</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/admin.css" />
+</head>
+<body>
+
+  <!-- ===== Login ===== -->
+  <div class="login" id="login">
+    <form class="login__card" id="loginForm" novalidate>
+      <div class="login__brand">
+        <span class="logo-mark">O</span>
+        <div><strong>OBSIDIAN</strong><span>Studio OS</span></div>
+      </div>
+      <h1 class="h-big">WELCOME BACK,<br />OWNER.</h1>
+      <p class="login__sub">Sign in to run the studio.</p>
+      <label class="field"><span>Email</span><input type="email" name="email" value="owner@obsidian.studio" autocomplete="username" /></label>
+      <label class="field"><span>Password</span><input type="password" name="password" placeholder="••••••••" autocomplete="current-password" /></label>
+      <button class="btn btn--white btn--block" type="submit">Sign in <span>→</span></button>
+      <p class="login__hint">Demo studio · any password works</p>
+    </form>
+  </div>
+
+  <!-- ===== App ===== -->
+  <div class="app" id="app" hidden>
+    <aside class="side">
+      <div class="side__brand">
+        <span class="logo-mark">O</span>
+        <div><strong>OBSIDIAN</strong><span>Studio OS</span></div>
+      </div>
+      <nav class="side__nav" id="sideNav">
+        <a href="#overview" data-page="overview"><i></i>Overview</a>
+        <a href="#leads" data-page="leads" class="is-active"><i></i>Leads <b id="leadsBadge"></b></a>
+        <a href="#bookings" data-page="bookings"><i></i>Bookings</a>
+        <a href="#calendar" data-page="calendar"><i></i>Calendar</a>
+        <a href="#messages" data-page="messages"><i></i>Messages</a>
+        <a href="#customers" data-page="customers"><i></i>Customers</a>
+        <a href="#reviews" data-page="reviews"><i></i>Reviews</a>
+        <a href="#automations" data-page="automations"><i></i>Automations</a>
+        <a href="#settings" data-page="settings"><i></i>Settings</a>
+      </nav>
+      <div class="side__user">
+        <span class="avatar">O</span>
+        <div><strong>Owner</strong><span>owner@obsidian.studio</span></div>
+        <button class="side__logout" id="logoutBtn" title="Sign out">⎋</button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <label class="search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input type="search" id="search" placeholder="Search leads, cars, phones…" />
+        </label>
+        <div class="topbar__right">
+          <a class="topbar__site" href="index.html" target="_blank" rel="noopener">View site ↗</a>
+          <span class="online"><i></i>2 online</span>
+          <span class="avatar">O</span>
+        </div>
+      </header>
+
+      <section class="page" id="page"></section>
+    </div>
+
+    <!-- Lead drawer -->
+    <div class="ldrawer-backdrop" id="ldrawerBackdrop"></div>
+    <aside class="ldrawer" id="ldrawer" aria-hidden="true"></aside>
+  </div>
+
+  <div class="toast" id="toast" role="status"><span id="toastMsg"></span></div>
+
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

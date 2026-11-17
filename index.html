@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obsidian Detail Studio — Bring it dirty.</title>
+  <meta name="description" content="Obsidian Detail Studio. Hand wash, paint correction and ceramic coating. Book online and know the price before we start." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <link rel="preload" as="image" href="assets/img/hero-dirty.jpg" />
+  <link rel="preload" as="image" href="assets/img/hero-clean.jpg" />
+</head>
+<body>
+
+  <!-- ===== Fixed chrome ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__left">
+      <a class="brand" href="#top">
+        <span class="brand__name">OBSIDIAN</span>
+        <span class="brand__sub">Detail Studio</span>
+      </a>
+      <div class="status-pill">
+        <span class="status-pill__dot"></span>
+        <span>Studio open</span>
+        <span class="status-pill__sep">·</span>
+        <strong id="nextSlotLabel">Next slot Wed 9AM</strong>
+      </div>
+    </div>
+    <nav class="nav__center">
+      <a href="#" data-scene="1">Work</a>
+      <a href="#" data-scene="2">Studio</a>
+      <a href="#" data-scene="4">Pricing</a>
+    </nav>
+    <div class="nav__right">
+      <button class="btn btn--white btn--sm" data-open-booking>Book now</button>
+    </div>
+  </header>
+
+  <!-- ===== Scroll stage ===== -->
+  <main id="top">
+    <section class="stage" id="stage" style="--scenes: 5;">
+      <div class="stage__pin">
+
+        <!-- Layers -->
+        <div class="layer layer--photo" id="layerDirty">
+          <img src="assets/img/hero-dirty.jpg" alt="A midnight blue sedan covered in dried mud inside a detailing studio" />
+        </div>
+        <div class="layer layer--photo" id="layerClean">
+          <img src="assets/img/hero-clean.jpg" alt="The same sedan, freshly washed and glossy" />
+        </div>
+        <div class="wipe" id="wipe"></div>
+        <div class="layer layer--photo" id="layerSwirls">
+          <img src="assets/img/macro-swirls.jpg" alt="Close-up of paint under an inspection lamp showing swirl marks" />
+        </div>
+        <div class="layer layer--photo" id="layerGlass">
+          <img src="assets/img/macro-glass.jpg" alt="Flawless ceramic coated paint with a single water bead" />
+        </div>
+        <div class="layer layer--photo" id="layerSunset">
+          <img src="assets/img/hero-sunset.jpg" alt="The finished sedan with the garage door open at sunset" />
+        </div>
+        <div class="vignette"></div>
+
+        <!-- Copy -->
+        <div class="copy copy--bl" id="copy1">
+          <div class="eyebrow">01 &nbsp;/&nbsp; Arrive</div>
+          <h1 class="h-display">BRING IT <span class="outline">DIRTY.</span></h1>
+          <p class="lede">We'll take it from here.</p>
+        </div>
+
+        <div class="copy copy--br" id="copy2">
+          <div class="eyebrow">02 &nbsp;/&nbsp; Wash</div>
+          <h2 class="h-display">SCROLL TO <span class="outline">WASH IT.</span></h2>
+          <p class="lede">Foam, two-bucket, decon. No swirls added.</p>
+        </div>
+
+        <div class="copy copy--bl" id="copy3">
+          <div class="eyebrow">03 &nbsp;/&nbsp; Inspect</div>
+          <h2 class="h-display">LOOK <span class="outline">CLOSER.</span></h2>
+          <p class="lede">Under a bright light, every swirl shows.</p>
+        </div>
+        <aside class="specs" id="specs3">
+          <div class="specs__row"><span>Paint depth</span><strong>112 µm</strong></div>
+          <div class="specs__row"><span>Defects</span><strong>Swirls · RIDS</strong></div>
+          <div class="specs__row"><span>Gloss</span><strong>71 GU</strong></div>
+        </aside>
+
+        <div class="copy copy--br copy--right" id="copy4">
+          <div class="eyebrow">04 &nbsp;/&nbsp; Correct &amp; coat</div>
+          <h2 class="h-display">SWIRLS OUT.<br /><span class="outline">GLASS ON.</span></h2>
+          <p class="lede">Two-stage correction. 9H ceramic. Five years of this.</p>
+        </div>
+        <aside class="specs specs--left" id="specs4">
+          <div class="specs__row"><span>Defects</span><strong>Removed</strong></div>
+          <div class="specs__row"><span>Gloss</span><strong>94 GU</strong></div>
+          <div class="specs__row"><span>Contact angle</span><strong>&gt; 110°</strong></div>
+        </aside>
+
+        <div class="copy copy--bl" id="copy5">
+          <div class="eyebrow">05 &nbsp;/&nbsp; Pick up</div>
+          <h2 class="h-display">KEYS BACK.<br /><span class="outline">JAW DROPS.</span></h2>
+          <p class="lede">Book your detail. You'll know the price before we start.</p>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="bottombar" id="bottombar">
+          <div class="bottombar__stat"><span>Studio</span><strong>Mon–Sat · 8–18</strong></div>
+          <div class="bottombar__stat"><span>Ceramic from</span><strong>$899</strong></div>
+          <button class="btn btn--white" data-open-booking>Book a detail</button>
+        </div>
+
+        <div class="scrollhint" id="scrollhint">
+          <span>Scroll</span>
+          <i></i>
+        </div>
+
+        <div class="progress" id="progress"><i></i></div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="footer__grid">
+        <div>
+          <div class="brand brand--footer"><span class="brand__name">OBSIDIAN</span><span class="brand__sub">Detail Studio</span></div>
+          <p class="footer__blurb">A two-bay studio for people who notice. Wash, correction and ceramic, done properly, priced up front.</p>
+        </div>
+        <div>
+          <h4>Studio</h4>
+          <p>14 Foundry Lane<br />Unit 3, North Yard</p>
+          <p>Mon–Sat · 8:00–18:00<br />Sunday closed</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="tel:+15550134221">(555) 013-4221</a><br /><a href="mailto:hello@obsidian.studio">hello@obsidian.studio</a></p>
+          <p><a href="#" data-open-booking>Book online →</a></p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <p>Maintenance wash · $89<br />Single-stage polish · $349<br />Correction + ceramic · $899</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Obsidian Detail Studio</span>
+        <a href="admin.html" class="footer__owner">Owner login</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ===== Booking drawer ===== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Book your detail">
+    <div class="drawer__hero">
+      <img src="assets/img/hero-sunset.jpg" alt="" />
+      <div class="drawer__hero-meta">
+        <span>Obsidian · Studio</span>
+        <span>Mon–Sat · 8–18</span>
+      </div>
+      <button class="drawer__close" id="drawerClose" aria-label="Close">×</button>
+    </div>
+
+    <form class="drawer__body" id="bookingForm" novalidate>
+      <div class="eyebrow eyebrow--muted">Booking &nbsp;/&nbsp; About 60 seconds</div>
+      <h2 class="h-drawer">BOOK YOUR DETAIL.</h2>
+
+      <!-- 1. Car -->
+      <div class="step">
+        <div class="step__title"><i>1</i> Your car</div>
+        <div class="cars" id="carGrid">
+          <button type="button" class="car" data-car="suv">
+            <svg viewBox="0 0 64 28" aria-hidden="true"><path d="M6 20h52v-6l-7-8H24L13 14H6z" /><circle cx="18" cy="21" r="4"/><circle cx="48" cy="21" r="4"/></svg>
+            <span>SUV</span>
+          </button>
+          <button type="button" class="car is-selected" data-car="sedan">
+            <svg viewBox="0 0 64 28" aria-hidden="true"><path d="M4 20h56v-5l-10-4-10-6H26L14 13 4 15z" /><circle cx="17" cy="21" r="4"/><circle cx="47" cy="21" r="4"/></svg>
+            <span>Sedan</span>
+          </button>
+          <button type="button" class="car" data-car="truck">
+            <svg viewBox="0 0 64 28" aria-hidden="true"><path d="M4 20h56v-8H38V4H18l-8 8H4z" /><circle cx="16" cy="21" r="4"/><circle cx="48" cy="21" r="4"/></svg>
+            <span>Truck</span>
+          </button>
+          <button type="button" class="car" data-car="coupe">
+            <svg viewBox="0 0 64 28" aria-hidden="true"><path d="M4 20h56v-4l-12-5-12-6H24L12 13 4 16z" /><circle cx="17" cy="21" r="4"/><circle cx="47" cy="21" r="4"/></svg>
+            <span>Coupe</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Work -->
+      <div class="step">
+        <div class="step__title"><i>2</i> The work</div>
+        <div class="packs" id="packList">
+          <button type="button" class="pack" data-pack="wash">
+            <div class="pack__text"><strong>Wash</strong><span>Foam wash &amp; dry. Wheels, tires, door jambs.</span></div>
+            <div class="pack__meta"><em data-price>$89</em><small>1.5 h</small><b class="radio"></b></div>
+          </button>
+          <button type="button" class="pack" data-pack="polish">
+            <div class="pack__text"><strong>Polish</strong><span>Single-stage correction. Deep gloss back.</span></div>
+            <div class="pack__meta"><em data-price>$349</em><small>4 h</small><b class="radio"></b></div>
+          </button>
+          <button type="button" class="pack is-selected" data-pack="ceramic">
+            <div class="pack__text"><strong>Ceramic</strong><span>Two-stage correction + 5-year ceramic. Glass-on finish.</span></div>
+            <div class="pack__meta"><em data-price>$899</em><small>2 days</small><b class="radio"></b></div>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. Time -->
+      <div class="step">
+        <div class="step__title"><i>3</i> Pick a time</div>
+        <div class="days" id="dayRow"></div>
+        <div class="times" id="timeRow"></div>
+      </div>
+
+      <!-- 4. Details -->
+      <div class="step">
+        <div class="step__title"><i>4</i> Your details</div>
+        <div class="fields">
+          <label><span>Name</span><input type="text" name="name" placeholder="Your name" autocomplete="name" required /></label>
+          <label><span>Phone</span><input type="tel" name="phone" placeholder="(555) 000-0000" autocomplete="tel" required /></label>
+          <label class="fields__full"><span>Email <em>(optional)</em></span><input type="email" name="email" placeholder="you@email.com" autocomplete="email" /></label>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="summary">
+        <div class="summary__title">Your summary</div>
+        <div class="summary__row"><span>Car</span><strong id="sumCar">Sedan</strong></div>
+        <div class="summary__row"><span>Work</span><strong id="sumPack">Ceramic</strong></div>
+        <div class="summary__row"><span>Drop-off</span><strong id="sumSlot">—</strong></div>
+        <div class="summary__row summary__row--total"><span>Total</span><strong id="sumTotal">$899</strong></div>
+      </div>
+
+      <button type="submit" class="btn btn--accent btn--block" id="confirmBtn">Confirm booking <span>→</span></button>
+      <p class="fineprint">No deposit · Nothing to pay now · Free cancellation up to 24h</p>
+    </form>
+
+    <div class="drawer__success" id="drawerSuccess">
+      <div class="check"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg></div>
+      <h3 class="h-drawer" id="successTitle">YOU'RE BOOKED.</h3>
+      <p id="successMeta">Thursday · 9:00 · Ceramic</p>
+      <button class="btn btn--ghost btn--sm" id="successDone">Done</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <div class="toast__logo">O</div>
+    <div class="toast__text"><strong>Booking confirmed</strong><span id="toastMsg">We've texted you the details.</span></div>
+  </div>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
